@@ -68,7 +68,7 @@ export default function Post() {
         <TabPanels>
           <TabPanel>
             <div className="flex">
-              <div className=" max-h-screen  overflow-auto    lg:w-[60%]  w-[90%] ">
+              <div className=" max-h-screen  overflow-auto    lg:w-[60%]  w-[100%] ">
                 {posts.map((post) => (
                   <GetPost key={post._id} post={post} />
                 ))}

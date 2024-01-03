@@ -190,7 +190,7 @@ export default function Profile() {
               ) : (
                 
                 <Image
-                  src={user?.image.url}
+                  src={user?.image?.url}
                   alt=""
                   w={"200px"}
                   h={"200px"}

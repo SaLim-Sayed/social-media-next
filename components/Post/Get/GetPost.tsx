@@ -168,9 +168,9 @@ const GetPost: React.FC<any> = ({ post }) => {
                 fontSize={"sm"}
                 rounded={"full"}
                 colorScheme="red"
-                leftIcon={<FaHeart />}
+                rightIcon={<FaHeart />}
               >
-                5 Likes
+                5
               </Button>
               <Button
                 flex={1}
@@ -180,9 +180,9 @@ const GetPost: React.FC<any> = ({ post }) => {
                 boxShadow={
                   "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
                 }
-                leftIcon={<FaComment />}
+                rightIcon={<FaComment />}
               >
-                3 Comments
+                3
               </Button>
               {user && user?._id === post.postedBy._id && (
                 <>
@@ -191,7 +191,7 @@ const GetPost: React.FC<any> = ({ post }) => {
                     fontSize={"sm"}
                     rounded={"full"}
                     colorScheme="red"
-                    leftIcon={<DeleteIcon />}
+                    rightIcon={<DeleteIcon />}
                   ></Button>
                   <Button
                     onClick={() => router.push(`/post/${post._id}`)}
@@ -201,7 +201,7 @@ const GetPost: React.FC<any> = ({ post }) => {
                     boxShadow={
                       "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
                     }
-                    leftIcon={<EditIcon />}
+                    rightIcon={<EditIcon />}
                   ></Button>
                 </>
               )}

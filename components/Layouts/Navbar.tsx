@@ -77,10 +77,7 @@ interface SidebarProps extends BoxProps {
 
 const LinkItems: Array<LinkItemProps> = [
   { name: "Home", icon: FiHome, url: "/" },
-  { name: "Trending", icon: FiTrendingUp, url: "/trending" },
-  { name: "Posts", icon: FiCompass, url: "/post" },
-  { name: "Favorites", icon: FiStar, url: "/favorites" },
-  { name: "Settings", icon: FiSettings, url: "/settings" },
+  { name: "Posts", icon: FiCompass, url: "/post" }
 ];
 
 const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
@@ -248,8 +245,6 @@ const MobileNav = ({ onOpen, ...rest }: MobileProps) => {
               <MenuItem onClick={() => router.push("/auth/profile")}>
                 Profile
               </MenuItem>
-              <MenuItem>Settings</MenuItem>
-              <MenuItem>Billing</MenuItem>
               <MenuDivider />
               <MenuItem onClick={() => signOut()}>Sign out</MenuItem>
             </MenuList>
